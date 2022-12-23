@@ -1085,3 +1085,52 @@ button.button-ajukan:hover {
 #kategori_dokter {
     width: 500px;
 }
+
+/* landing-page-admin-article */
+.heading-admin-article h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.lp-admin-article {
+    position: relative;
+    width: 1500px;
+    height: 300px;
+    margin: 40px auto;
+    /* background: #000; */
+}
+
+.lp-admin-article .box {
+    position: relative;
+    width: calc(500px - 40px);
+    height: calc(300px - 40px);
+    background: #e25e82;
+    float: left;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.lp-admin-article .box .content {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.lp-admin-article h2 {
+    font-size: 40px;
+}
+
+.lp-admin-article h1 {
+    font-size: 64px;
+    padding-top: 30px;
+}
+
+.tambah-artikel {
+    position: relative;
+    margin-left: 80%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* end landing-page-admin-article*/
