@@ -45,7 +45,10 @@
         </div>
     </div>
     <div class="tambah-artikel">
-        <button><a href="">Tambah Artikel</a></button>
+        <div class="btn-tambah-artikel">
+            <a href="">Tambah Artikel</a>
+        </div>
     </div>
+    <div class="footer"><img src="/svg/footer.svg" alt="" /></div>
 </body>
 </html>

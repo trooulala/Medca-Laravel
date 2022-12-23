@@ -503,6 +503,7 @@ input[type="submit"]:hover {
 
 .footer {
     background-color: #011627;
+    position: fixed;
     bottom: 0;
     height: 56px;
     width: 100vw;
@@ -1128,9 +1129,23 @@ button.button-ajukan:hover {
 
 .tambah-artikel {
     position: relative;
-    margin-left: 80%;
+    margin-left: 79.5%;
     box-sizing: border-box;
     text-decoration: none;
+    display: flex;
+    background-color: transparent;
+}
+
+.tambah-artikel a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    border: 2px #00a651;
+    border-style: solid;
+    border-color: #00a651;
+    background-color: #00a651;
+    padding: 15px;
+    border-radius: 15px;
 }
 
 /* end landing-page-admin-article*/

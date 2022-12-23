@@ -48,3 +48,7 @@ Route::get('/form janji', function () {
 Route::get('/admin-article', function () {
     return view('landing-page-admin-article');
 });
+
+Route::get('/admin-rs', function () {
+    return view('admin-landPage');
+});
