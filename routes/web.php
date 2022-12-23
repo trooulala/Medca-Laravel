@@ -45,3 +45,6 @@ Route::get('/form janji', function () {
     return view('form-buatjanji');
 });
 
+Route::get('/admin RS landing Page', function () {
+    return view('admin-landPage');
+});
