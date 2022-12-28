@@ -12,11 +12,14 @@
       <div class="form-container">
         <div class="logo"></div>
         <h3>Login Now</h3>
-        <h4>Email</h4>
-        <input type="email" name="email" required placeholder="enter your email" />
-        <h4>Password</h4>
-        <input type="password" name="password" required placeholder="enter your password" />
-        <input type="submit" name="submit" value="Login" class="form-btn" />
+        <form action="/login" method="post">
+          <h4>Email</h4>
+          <input type="email" name="email" required placeholder="enter your email" />
+          <h4>Password</h4>
+          <input type="password" name="password" required placeholder="enter your password" />
+          <input type="submit" name="submit" value="Login" class="form-btn" />
+        </form>
+        
         <p>Belum punya akun? <a href="/register"> register </a></p>
 
         <div class="ornament_1"></div>

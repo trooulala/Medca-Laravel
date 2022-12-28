@@ -86,6 +86,6 @@
         <img src="/svg/docter-image.svg" alt="">
         
     </div> 
-    <div class="footer"><img src="asset/footer.svg" alt=""></div>
+    <div class="footer"><img src="/svg/footer.svg" alt="" /></div>
 </body>
 </html>

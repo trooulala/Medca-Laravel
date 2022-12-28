@@ -113,7 +113,7 @@ p {
 .jumbotron .logo {
     height: 67px;
     width: 225px;
-    background-image: url("//svg/medCa.svg");
+    background-image: url("/svg/medCa.svg");
 }
 
 .jumbotron-fitur {
@@ -503,10 +503,13 @@ input[type="submit"]:hover {
 
 .footer {
     background-color: #011627;
-    position: fixed;
-    bottom: 0;
+    position: relative;
+    bottom: 0px;
+    /* top: 100%; */
     height: 56px;
     width: 100vw;
+    overflow: hidden;
+    display: block;
 }
 
 /* login and register form */
@@ -514,14 +517,13 @@ input {
     height: 35px;
     width: 100%;
     padding: 10px;
-    box-sizing: border-box;
-    margin-bottom: 15px;
-    border: none;
-    outline: none;
     background-color: #f5dbdb;
-    border: none;
     border-radius: 10px;
-    font-size: 15px;
+    /* box-sizing: border-box; */
+    /* margin-bottom: 15px; */
+    border: none;
+    /* outline: none; */
+    /* font-size: 15px; */
 }
 
 .overlay-login {
@@ -582,7 +584,7 @@ input {
 .form-container h4 {
     background-color: transparent;
     font-size: 15px;
-    padding-top: 10pxs;
+    padding-top: 10px;
 }
 
 .form-container .form-btn {
@@ -860,7 +862,7 @@ input {
 
 .content-bar ul {
     flex: 1 1 1 1 200px;
-    margin: 0;
+    margin: auto;
     margin-top: 9px;
     background-color: transparent;
     list-style: none;
@@ -876,14 +878,64 @@ input {
     background-color: transparent;
 }
 
-.content-bar li {
+.content-in-bar li a {
     justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 3px;
 }
 
-.dummy {
-    margin-top: 30px;
-    justify-content: center;
-    display: flex;
+.content-in-bar .search-artikel {
+    float: right;
+}
+
+.heading-artikel h1 {
+    margin-left: 236px;
+    margin-top: 40px;
+}
+
+.heading-artikel h5 {
+    margin-left: 236px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.foto-artikel {
+    background-image: url("/svg/News_Background.png");
+    width: 900px;
+    height: 500px;
+    margin-left: 236px;
+    margin-top: 40px;
+    border-radius: 15px;
+}
+
+.rekomendasi-berita h3 {
+    border-style: none;
+    width: fit-content;
+    background-color: #e1295b;
+    padding: 20px;
+    color: #fff;
+    border-radius: 20px;
+    /* float: right; */
+}
+
+.list-rekomendasi-berita {
+    float: right;
+    position: relative;
+}
+
+.isi-artikel p {
+    font-size: 16px;
+    margin-left: 236px;
+    margin-right: 772px;
+    position: relative;
+}
+
+.rekomendasi-berita {
+    float: right;
+    position: relative;
+    margin-right: 20%;
+    margin-top: -26%;
 }
 
 /*end isi artikel*/
@@ -1149,3 +1201,133 @@ button.button-ajukan:hover {
 }
 
 /* end landing-page-admin-article*/
+
+/* upload-article */
+.medca-upload {
+    /* background-color: #fbc8c8; */
+    /* height: 100vh;
+    width: 100vw; */
+    display: flex;
+    justify-content: center;
+}
+
+.wrap-header {
+    /* height: fit-content; */
+}
+
+.content-container {
+    /* height: fit-content; */
+}
+
+.medca-logo {
+    margin-top: 50px;
+    height: 67px;
+    width: 205px;
+    background-image: url("/svg/medCa.svg");
+}
+
+/* .wrap-header h3 {
+    color: #ffff;
+} */
+
+.kategori {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.kategori-artikel {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    padding: 20px;
+}
+
+#kategori_artikel {
+    width: 500px;
+}
+
+.judul-artikel {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    padding: 20px;
+}
+
+.input-judul {
+    width: 500px;
+    margin: auto;
+}
+
+.upload-cover {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    padding: 20px;
+}
+
+.drop-zone {
+    max-width: 500px;
+    height: 200px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
+    border: 3px dashed #00a651;
+    border-radius: 15px;
+    margin: 20px auto;
+}
+
+.tulis-paragraf {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    padding: 20px;
+}
+
+.form-textarea {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+textarea {
+    width: 500px;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    position: absolute;
+    left: 37%;
+}
+
+.submit-artikel {
+    position: relative;
+    margin-top: 10%;
+    margin-left: 55%;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: flex;
+    background-color: transparent;
+}
+
+.submit-artikel a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    border: 2px #00a651;
+    border-style: solid;
+    border-color: #00a651;
+    background-color: #00a651;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* end upload-article */

@@ -23,11 +23,11 @@
         <nav>
           <a href="/"><div class="logo"></div></a>
           <ul class="nav__links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="article.html">Artikel</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          <a href="login.html" class="cta"><button class="login">Login</button></a>
+          <a href="/login" class="cta"><button class="login">Login</button></a>
         </nav>
       </div>
     </header>

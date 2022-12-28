@@ -18,7 +18,7 @@
           <a href="/"><div class="logo"></div></a>
           <ul class="nav__links">
             <li><a href="/">Home</a></li>
-            <li><a href="article.html">Artikel</a></li>
+            <li><a href="/article">Artikel</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
           <a href="/login" class="cta"><button class="login">Login</button></a>

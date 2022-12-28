@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PasienDo;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +20,8 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::POST('/register', [PasienDo::class, 'regis_pasien']);
 
 Route::get('/register', function () {
     return view('register');
@@ -50,5 +52,21 @@ Route::get('/admin-article', function () {
 });
 
 Route::get('/admin-rs', function () {
-    return view('admin-landPage');
+    return view('admin-landingPage');
+});
+
+Route::get('/upload-artikel', function () {
+    return view('upload-article');
+});
+
+Route::get('/admin-edit-infoRS', function () {
+    return view('admin-editInfoRS');
+});
+
+Route::get('/admin-addDokter', function () {
+    return view('admin-addDoc');
+});
+
+Route::get('/isi-artikel', function () {
+    return view('isi-article');
 });
